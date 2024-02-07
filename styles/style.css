@@ -1,0 +1,212 @@
+/* default */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #131313;
+	
+}
+
+main {
+    max-width: 1171px;
+    max-height: 552.28px;
+    margin: 0 auto;
+    padding-top: 107px;
+}
+
+a {
+	text-decoration: none;
+    font-family: "Yeseva One";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6, p, img {
+	margin: 0;
+	padding: 0;
+}
+
+ul, li, ol {
+	list-style: none;
+}
+
+button {
+	background: transparent;
+	border: none;
+}
+
+/* container */
+
+ .container {
+    display: flex;
+    gap: 50px;
+} 
+
+/* container text */
+
+.container__text {
+	min-width: 442px;
+}
+
+#title {
+	font-size: 27px;
+	margin: 53.04px 0 34px;
+}
+
+.characteristics {
+	font-family: "Yeseva One";
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #E3B873;
+	font-size: 18px;
+	margin-bottom: 9px;
+}
+
+.characteristics_container {
+	 display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 34px;
+    column-gap: 29px;
+    margin-top: 42px;
+}
+
+.description_room {
+	font-family: "Nunito Sans";
+	font-size: 14px;
+	color: #FFF;
+	line-height: 190.96%;
+
+}
+
+#city_name, #size, #time, #cost {
+	font-size: 13px;
+}
+
+/* nav_point */
+
+.nav_arrows {
+    display: flex;
+    max-height: 14px;
+    margin-top: 92.92px;
+}
+
+.nav_point {
+	display: flex;
+    flex-direction: row;
+    gap: 17.54px;
+}
+
+.arrow_prev {
+    padding-right: 29.5px;
+    cursor: pointer;
+}
+
+.arrow_next {
+	padding-left: 29.5px;
+    cursor: pointer;
+}
+
+/* container img */
+
+.container__img {
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	min-width: 0;
+}
+
+/* links */
+
+.links {
+    display: flex;
+    gap: 60.5px;
+    max-width: 623px;
+
+}
+
+.city_room {
+    font-size: 14px;
+    line-height: 138.6%;
+    white-space: nowrap;
+    color: rgb(100%, 100%, 100%, 30%);
+    padding-bottom: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.active-link {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 6.68px;
+    margin: 0;
+    transform: none;
+}
+
+
+/* slider__img */
+
+.slider {
+	position: relative;
+	overflow: hidden;
+}
+
+/*.slider__img .image {
+    background-size: cover;
+    background-position: center center;
+    width: 679px;
+    height: 442px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+*/
+
+.slider__img {
+	display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+/* slider point */
+
+
+
+.nav_point {
+   display: flex;
+
+   gap: 17.54px;
+
+}
+
+
+.slider__dots {
+    display: flex;
+    justify-content: center;
+    gap: 17.54px;
+    left: 0;
+    bottom: -20px;
+    padding-top: 1.46px;
+    width: 100%;
+  }
+  
+  .slider__dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgb(100%, 100%, 100%, 30%);
+    border-radius: 50%;
+    margin: 0 ;
+    cursor: pointer;
+    transition: background 0.4s ease;
+  }
+  
+  .slider__dots-item:hover, .slider__dots-item.active {
+    background: #fff;
+  }

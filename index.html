@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA- Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Slider</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            
+            <div class="container__text">
+
+                <h1 class="characteristics" id="title">Completed<br>projects</h1>
+                <p class="description_room">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+               
+                <div class="characteristics_container">
+                    <div>
+                        <h2 class="characteristics city">City:</h2>
+                        <p class="description_room" id="city_name">Rostov-on-Don<br>LCD admiral</p>
+                    </div>
+                    
+                    <div>
+                        <h2 class="characteristics area">apartment area:</h2>
+                        <p class="description_room" id="apartment_text">81 m2</p>
+
+                    </div>
+                    
+                    <div>
+                        <h2 class="characteristics repair_time">Repair time:</h2>
+                         <p class="description_room" id="time">3.5 months</p>
+
+                    </div>
+                    
+                    <div>
+                        <h2 class="characteristics repair_cost">Repair Cost:</h2>
+                        <p class="description_room" id="cost">Upon request</p>
+                    </div>
+                                  
+
+                </div> <!-- /*characteristics_container */ -->
+                
+                <div class="nav_arrows">
+
+                        <button class="arrow_prev">
+
+                            <svg class="block-arrow-item arrow-back left" width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63807 13.276L2.29917e-05 6.638L6.63807 -3.82298e-05L7.58563 0.94753L1.89516 6.638L7.58563 12.3285L6.63807 13.276Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.947579 5.9681L41.4556 5.9681L41.4556 7.30817L0.947578 7.30816L0.947579 5.9681Z" fill="white"/>
+                            </svg>
+
+                        </button>
+
+                        <div class="nav_point"></div>
+
+                        <button class="arrow_next">
+
+                            <svg class="block-arrow-item arrow-next right" width="42" height="14" viewBox="0 0 42 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0451 -0.000183105L41.6831 6.63786L35.0451 13.2759L34.0975 12.3283L39.788 6.63786L34.0975 0.947384L35.0451 -0.000183105Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M40.7355 7.30776L0.227539 7.30776L0.227539 5.9677L40.7355 5.9677L40.7355 7.30776Z" fill="white"/>
+                            </svg> 
+
+                        </button>
+
+
+                    </div> <!-- /* nav_arrows */ -->
+                
+
+
+            </div> <!-- /*container__text */ -->
+
+            <div class="container__img">
+
+                <div class="links" id="link">
+                    <a href="#" class="city_room active-link" data-index="0" id="city__link_0">Rostov-on-Don, Admiral</a>
+                    <a href="#" class="city_room" data-index="1" id="city__link_1">Sochi Thieves</a>
+                    <a href="#" class="city_room" data-index="2" id="city__link_2">Rostov-on-Don Patriotic</a>
+                </div>
+
+                <div class="slider">
+
+                    <div class="slider__img">
+                        
+                        <img src="png/room1.png" data-index="0" class="image">
+                        <img src="png/room2.png" data-index="1" class="image">
+                        <img src="png/room3.png" data-index="2" class="image">
+
+                    </div> <!-- /*slider__img*/ -->
+
+                </div> <!-- /*slider*/ -->
+
+            </div> <!-- /*container__img*/ -->
+
+            
+            
+
+
+        </div> <!-- /*container */ -->
+
+    </main>
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
